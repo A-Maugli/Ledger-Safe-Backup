@@ -1,6 +1,6 @@
 # Ledger Safe Restore
 
-## Collect reqired number of shares, e.g. Share2 and Share3
+## Collect required number of shares, e.g. Share2 and Share3
 
 ### Share2 
 ```
@@ -11,7 +11,7 @@
     total_shares: 3,
     treshold: 2
 
-  Encrypted_passpharse:  
+  Encrypted_passphrase:  
     enc(word1):		29 eb 55 2b
     enc(word2):		9b 49 67 a8
     enc(word3):		a8 76 aa 7e
@@ -51,7 +51,7 @@
     total_shares: 3,
     treshold: 2
 
-  Encrypted_passpharse:  
+  Encrypted_passphrase:  
     enc(word1):		29 eb 55 2b
     enc(word2):		9b 49 67 a8
     enc(word3):		a8 76 aa 7e
@@ -82,7 +82,7 @@
 	words: predator away ceramic leader category cover evening device escape weapon blanket greatest syndrome orbit hairy bulb leader scroll academic presence adequate quarter terminal course playoff slap amount dress guitar trouble briefing declare campus coding ting visitor wildlife dough scramble brother dress cards literary home window mother dramatic cubic leaf scandal desktop radar clay ranked merit justice purchase package health impulse timely should sweater bishop fact deadline gums scared shelter penalty desert desktop friendly blanket mixed juice scared aviation shrimp acne both destroy check negative
 ```
 
-## Optional: burn safe OS on DVD, e.g. Tails
+## Optional: burn secure OS image on DVD (e.g. Tails)
 
 Burning Tails on a DVD, see at https://tails.net/install/dvd/index.en.html
 
@@ -115,7 +115,7 @@ echo -n $otp | sha256sum
 
 If different: FATAL ERROR, passphrase cannot be recovered
 
-## Write down the Master Secret to a piece of paper
+## Write down the Master Secret on a piece of paper
 ```
 OTP1:	59843046 
 OTP2:	e83c15d8
@@ -143,11 +143,11 @@ OTP23:	5615b3df
 OTP24:	4636aad5
 ```
 
-## Switch off computer.
+## Switch off the computer
 
-The following computations SHOULD BE done manually, on a piece of paper,
+The following computations MUST be done manually, on a piece of paper,
 using the xor_table.txt and ascii_hex_table.txt and word4_word_table.txt
-The tables should be printed out, and used independently from a computer.
+Print the tables and use them independently from a computer.
 
 ```
 Passphrase
@@ -248,7 +248,7 @@ Passphrase
 	word24:			73 74 79 6c => styl => style
 ```
 
-## Write down Ledger master Passhprase on a Recovery Sheet
+## Write down Ledger master passhprase on a Recovery Sheet
 ```
 word1:	poem 
 word2:	surprise
@@ -276,17 +276,18 @@ word23:	napkin
 word24:	style
 ```
 
-## From the recovery sheet, enter Master Passhprase to Ledger HW wallet
+# Recover Ledger 
+From the Recovery Sheet, enter Master Passhprase to a Ledger HW wallet.
 
-Check generated addresses and account balances
+Verify the generated addresses and account balances.
 
 ## Tidying up
 
-"Burn" all papers, including Recovery Sheet, if it was a 
-"Ledger Safe Backup" check operation
+Ddestroy (for example, burn) all papers used for manual work, including Recovery Sheet, if it was a 
+"Ledger Safe Backup" check operation.
 
 Keep the Recovery Sheet, if it was a "Ledger Restore from Shares" operation.
-And consider to
-- generate a new secret on another Ledger, 
-- save account amounts to the new addresses, 
-- start Ledger Secure Backup for new secret... it is a never ending story.
+And consider
+- generating a new secret on another Ledger, 
+- moving account balances to new addresses, 
+- starting a Ledger Secure Backup for new secret.

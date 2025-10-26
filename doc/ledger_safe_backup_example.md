@@ -1,15 +1,15 @@
 # Ledger Safe Backup - example
 
-## Write a DVD with the image of a safe OS.
+## Write a DVD with the image of a secure OS
 E.g. for Tails, see instructions here: 
 https://tails.net/install/index.en.html
 
-Burning Tails on a DVD,
+Burning Tails to a DVD,
 https://tails.net/install/dvd/index.en.html
 
 ## Boot Tails from DVD
 
-## Open a terminal window, generate OTP, OTP checksum
+## Open a terminal window, generate OTP and OTP checksum
 ```
 otp=`openssl rand -hex 96`
 echo $otp
@@ -39,7 +39,7 @@ predator away beard leader dining float olympic pulse timber ambition wrote rank
 predator away ceramic leader category cover evening device escape weapon blanket greatest syndrome orbit hairy bulb leader scroll academic presence adequate quarter terminal course playoff slap amount dress guitar trouble briefing declare campus coding ting visitor wildlife dough scramble brother dress cards literary home window mother dramatic cubic leaf scandal desktop radar clay ranked merit justice purchase package health impulse timely should sweater bishop fact deadline gums scared shelter penalty desert desktop friendly blanket mixed juice scared aviation shrimp acne both destroy check negative
 ```
 
-## Write down OTP, checksum and SLIP39 shares to a piece of paper:
+## Write down OTP, checksum and SLIP39 shares on a piece of paper
 ```
 OTP:
 59843046 e83c15d8 da13db0b 6c35296b 
@@ -64,7 +64,7 @@ predator away beard leader dining float olympic pulse timber ambition wrote rank
 predator away ceramic leader category cover evening device escape weapon blanket greatest syndrome orbit hairy bulb leader scroll academic presence adequate quarter terminal course playoff slap amount dress guitar trouble briefing declare campus coding ting visitor wildlife dough scramble brother dress cards literary home window mother dramatic cubic leaf scandal desktop radar clay ranked merit justice purchase package health impulse timely should sweater bishop fact deadline gums scared shelter penalty desert desktop friendly blanket mixed juice scared aviation shrimp acne both destroy check negative
 ```
 
-## Switch off computer. The following computations SHOULD BE done manually.
+## Switch off the computer. The following computations MUST be done manually.
 ```
 E.g.
 Ledger passphrase:
@@ -124,7 +124,7 @@ OTP24:4636aad5
 
 ## Compute encrypted passphrase MANUALLY, using ascii_hex table and xor table
 
-Note: The first four charactersof the passphrase are unique. Encrypt only these characters. If a word is less then 4 character long, fill it up with space.
+Note: The first four characters of each passphrase words are unique. Encrypt only these characters. If a word is less than 4 character long, fill it up with space.
 
 ```
 		char	hex
@@ -225,7 +225,7 @@ OTP24:			46 36 aa d5
 enc(word24):	35 42 d3 b9
 ```
 
-## Write down shares on a separate piece of paper
+## Write down the shares on separate pieces of paper
 ### Share1
 ```
   Header
@@ -235,7 +235,7 @@ enc(word24):	35 42 d3 b9
     total_shares: 3,
     treshold: 2
 
-  Encrypted_passpharse:  
+  Encrypted_passphrase:  
     enc(word1):		29 eb 55 2b
     enc(word2):		9b 49 67 a8
     enc(word3):		a8 76 aa 7e
@@ -275,7 +275,7 @@ enc(word24):	35 42 d3 b9
     total_shares: 3,
     treshold: 2
 
-  Encrypted_passpharse:  
+  Encrypted_passphrase:  
     enc(word1):		29 eb 55 2b
     enc(word2):		9b 49 67 a8
     enc(word3):		a8 76 aa 7e
@@ -314,7 +314,7 @@ enc(word24):	35 42 d3 b9
     total_shares: 3,
     treshold: 2
 
-  Encrypted_passpharse:  
+  Encrypted_passphrase:  
     enc(word1):		29 eb 55 2b
     enc(word2):		9b 49 67 a8
     enc(word3):		a8 76 aa 7e
@@ -345,8 +345,10 @@ enc(word24):	35 42 d3 b9
 	words: predator away ceramic leader category cover evening device escape weapon blanket greatest syndrome orbit hairy bulb leader scroll academic presence adequate quarter terminal course playoff slap amount dress guitar trouble briefing declare campus coding ting visitor wildlife dough scramble brother dress cards literary home window mother dramatic cubic leaf scandal desktop radar clay ranked merit justice purchase package health impulse timely should sweater bishop fact deadline gums scared shelter penalty desert desktop friendly blanket mixed juice scared aviation shrimp acne both destroy check negative
 ```
 
-## Execute "Ledger safe restore" procedure, to see that you can restore Ledger master passphrase.
+## Test restore
+Execute the "Ledger safe restore" procedure to verify that you can restore Ledger master passphrase.
 
-## Store the shares in a safe way before distribution.
+## Store and destroy
+Store the shares securely before distribution.
 
-## "Burn" every piece of paper used for computation, except the shares.
+Destroy (for example, burn) every piece of paper used for manual computation, except the shares.
