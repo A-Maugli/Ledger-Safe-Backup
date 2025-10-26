@@ -9,7 +9,7 @@ https://tails.net/install/dvd/index.en.html
 
 ## Boot Tails from DVD
 
-## Open a terminal window, generate OTP
+## Open a terminal window, generate OTP, OTP checksum
 ```
 otp=`openssl rand -hex 96`
 echo $otp
@@ -18,10 +18,12 @@ echo $otp
 # Generate SHA256 of OTP 
 echo -n $otp | sha256sum
 5df397e0fdfc5707acc7d63f22a5609cdf01eb5995944bc5f4e07afc9dc09758  -
+```
 
-# Generate SLIP39 words
+## Generate SLIP39 shares
 See at https://iancoleman.io/slip39/
 
+```
 Master secret
 59843046e83c15d8da13db0b6c35296baa92a8043434d88e435d0e58c699bfb726084050b79b8a17f466326e485b848b48675356a2d38bb05d20f0132ba1fdff52f4a861546d59013e527f301ccbf9044ad7618038437ff65615b3df4636aad5
 
@@ -37,7 +39,7 @@ predator away beard leader dining float olympic pulse timber ambition wrote rank
 predator away ceramic leader category cover evening device escape weapon blanket greatest syndrome orbit hairy bulb leader scroll academic presence adequate quarter terminal course playoff slap amount dress guitar trouble briefing declare campus coding ting visitor wildlife dough scramble brother dress cards literary home window mother dramatic cubic leaf scandal desktop radar clay ranked merit justice purchase package health impulse timely should sweater bishop fact deadline gums scared shelter penalty desert desktop friendly blanket mixed juice scared aviation shrimp acne both destroy check negative
 ```
 
-## Write down OTP to a piece of paper:
+## Write down OTP, checksum and SLIP39 shares to a piece of paper:
 ```
 OTP:
 59843046 e83c15d8 da13db0b 6c35296b 
@@ -121,6 +123,9 @@ OTP24:4636aad5
 ```
 
 ## Compute encrypted passphrase MANUALLY, using ascii_hex table and xor table
+
+Note: The first four charactersof the passphrase are unique. Encrypt only these characters. If a word is less then 4 character long, fill it up with space.
+
 ```
 		char	hex
 word1:	poem  	70 6f 65 6d

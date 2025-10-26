@@ -276,9 +276,11 @@ word23:	napkin
 word24:	style
 ```
 
-From the recovery sheet, enter Master Passhprase to Ledger HW wallet
+## From the recovery sheet, enter Master Passhprase to Ledger HW wallet
 
-Check Generated addresses and account balances
+Check generated addresses and account balances
+
+## Tidying up
 
 "Burn" all papers, including Recovery Sheet, if it was a 
 "Ledger Safe Backup" check operation
@@ -286,5 +288,5 @@ Check Generated addresses and account balances
 Keep the Recovery Sheet, if it was a "Ledger Restore from Shares" operation.
 And consider to
 - generate a new secret on another Ledger, 
-- save account amounts to new addresses, 
+- save account amounts to the new addresses, 
 - start Ledger Secure Backup for new secret... it is a never ending story.
