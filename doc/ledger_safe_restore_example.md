@@ -146,7 +146,7 @@ OTP24:	4636aad5
 ## Switch off the computer
 
 The following computations MUST be done manually, on a piece of paper,
-using the xor_table.txt and ascii_hex_table.txt and word4_word_table.txt
+using the xor_table.txt and ascii_hex_table.txt and bip-39/english.txt
 Print the tables and use them independently from a computer.
 
 ```

@@ -26,7 +26,7 @@ See the details at ./doc/ledger_safe_backup_example.txt
 - Using SLIP39 combine, compute the OTP from the shares.
 - Compute the checksum of the OTP and compare it with checksum on shares.
 - Write down the OTP on a piece of paper.
-- Print out aux tables: xor_table.txt, ascii_hex.txt, word4_word.txt
+- Print out aux tables: xor_table.txt, ascii_hex.txt, and bip-39/english.txt
 - Turn off the computer. From now on, work manually.
 - Compute the decrypted passphrase using the auxiliary tables.
 - Enter the passphrase into a Ledger HW wallet.
