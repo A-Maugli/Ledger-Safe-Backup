@@ -1,4 +1,4 @@
-# Ledger Safe Restore
+# Ledger Safe Restore - example
 
 ## Collect required number of shares, e.g. Share2 and Share3
 
@@ -276,7 +276,7 @@ word23:	napkin
 word24:	style
 ```
 
-# Recover Ledger 
+## Recover Ledger 
 From the Recovery Sheet, enter Master Passhprase to a Ledger HW wallet.
 
 Verify the generated addresses and account balances.
