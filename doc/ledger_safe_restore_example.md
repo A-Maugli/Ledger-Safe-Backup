@@ -283,7 +283,7 @@ Verify the generated addresses and account balances.
 
 ## Tidying up
 
-Ddestroy (for example, burn) all papers used for manual work, including Recovery Sheet, if it was a 
+Destroy (for example, burn) all papers used for manual work, including Recovery Sheet, if it was a 
 "Ledger Safe Backup" check operation.
 
 Keep the Recovery Sheet, if it was a "Ledger Restore from Shares" operation.
